@@ -1,0 +1,46 @@
+<div class="card">
+  <div class="card-content">
+    <div class="image">
+      <img *ngIf="image != ''" [src]="image" />
+    </div>
+    <div class="description">
+      <h3>{{ title }}</h3>
+      <i>{{ subtitle }}</i>
+      <p>
+        {{ description }}
+      </p>
+      <div>
+        <span *ngIf="link_website != ''">
+          <a [href]="link_website" class="button is-link is-light">
+            <i class="fas fa-link"></i> &nbsp; Website
+          </a>
+          &nbsp;
+        </span>
+        <span *ngIf="link_twitter != ''">
+          <a [href]="link_twitter" class="button is-link is-light">
+            <i class="fab fa-twitter"></i> &nbsp; Twitter
+          </a>
+          &nbsp;
+        </span>
+        <span *ngIf="link_facebook != ''">
+          <a [href]="link_facebook" class="button is-link is-light">
+            <i class="fab fa-facebook"></i> &nbsp; Facebook
+          </a>
+          &nbsp;
+        </span>
+        <span *ngIf="link_discord != ''">
+          <a [href]="link_discord" class="button is-link is-light">
+            <i class="fab fa-discord"></i> &nbsp; Discord
+          </a>
+          &nbsp;
+        </span>
+        <span *ngIf="link_youtube != ''">
+          <a [href]="link_youtube" class="button is-link is-light">
+            <i class="fab fa-youtube"></i> &nbsp; YouTube
+          </a>
+          &nbsp;
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

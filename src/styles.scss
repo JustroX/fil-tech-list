@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bulma/css/bulma.css";
+
+figure {
+  cursor: pointer;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.page-content {
+  width: 80%;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
